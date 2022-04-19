@@ -1,0 +1,26 @@
+﻿
+@{
+    Layout = null;
+}
+
+<h2>Login</h2>
+@using (Html.BeginForm())
+{
+    <table>
+        <tr>
+            <td>
+                username:@Html.TextBox("username")
+            </td>
+        </tr>
+        <tr>
+            <td>
+                password:@Html.Password("password")
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="login" />
+            </td>
+        </tr>
+    </table>
+}
